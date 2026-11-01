@@ -1,0 +1,24 @@
+{
+  "name": "nonprofit-knowledge-desk",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "seed": "tsx src/seed_handbook.ts",
+    "dev": "tsx src/nonprofit_server.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/answer_policy.test.ts"
+  },
+  "dependencies": {
+    "openai": "^6.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
